@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/1.css">
+    <title>Title</title>
+</head>
+<!--div是块元素，独占一行，没有为里边的元素进行任何的的样式，他是为了页面布局
+p h1 h2 h3
+
+
+span是一个内联元素，行内元素
+所谓行内元素，是值占自身大小的元素，不会占用一行、
+span没有任何的额样式，是为了专门文字设置样式的
+
+
+
+块元素主要是为了页面中的布局， 内联元素选中文本设置样式
+一般用块元素包含内联元素
+a元素可以包含任意除了他本身的元素
+元素不能包含任何其他的块元素
+-->
+
+<!--
+id选择器 选中的元素只有一个
+语法：#id属性{}
+
+可以为元素设置class属性 他与id类似，但是class可以重复
+与class属性值的元素，我们说他是一类
+
+类选择器  通过原色的class属性值选中一组元素
+语法：.class属性值{}
+可以为同一个元素设置多个class属性值，多个有个元素用空格隔开
+
+
+选择器分组
+通过选择器分组可以同时选中多个选择器队形的元素
+语法：选择器1，选择器2，选择器3{}
+
+
+通配选择器
+他可以用来选中页面中的所有元素
+语法*{}
+
+
+为class为p3的span元素设置一个背景颜色为黄色
+复合选择器（交集选择器）
+他可以选中同时满足多个选择器的元素
+语法：选择器1选择器2选择器3
+
+子元素选择器
+选择指定父元素的子元素
+语法 父元素 >子元素
+
+
+-->
+<body>
+<div style="background-color: yellow;width:200px;">divde </div>
+<hr>
+<span>span元素asd </span>
+<p id="p1">p元素</p>
+<p class="p2 p3">p元素</p>
+<p class="p2">p元素</p>
+<p class="p2"> p元素</p>
+<p class="p3">疑后代元素选择器
+    作用：选中指定元素的指定后代元素
+    语法：
+    祖先元素 后代元素{}是地上霜</p>
+<span class="p3">床前明月光</span>
+<div><span>div-span</span></div>
+<div id="d1">
+    <p><span>祖宗是div</span></p>
+    <span>div de span</span>
+</div>
+<h1>h1标题</h1>
+</body>
+</html>

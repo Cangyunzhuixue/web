@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        .p3{
+            background-color: gray;/*类*/
+
+        }
+        .p1{
+            background-color: yellow;/*类*/
+            !important;
+
+        }
+        p{
+            background-color:red ;/*元素选择器*/
+        }
+        /*
+        #p2{
+            background-color: aqua;d选择器
+        }
+        *{
+            font-size: 50px;通配选择器
+        }
+        p#p2{
+            background-color: wheat;优先级可以相加
+
+        }
+        */
+    </style>
+    <!--
+    不用的选择器选择同一个元素，并设置同一个样式
+    优先级规则：
+    内联样式 优先级 1000
+    id选择器 100
+    类和伪类 10
+    元素选择器 1
+    通配* 0
+
+    继承的样式没有优先级
+
+    优先级可以相加，但是不会超过最大数量级
+
+    选择器的优先级一样，则使用靠后的样式(指的是在css文件中的样式)
+
+    并集选择器的优先级是单独计算的div,p,#p,.hell0
+
+    可以在样式的最后添加 ！important此时优先级最高
+
+
+
+
+    -->
+</head>
+<body>
+<p class=" p3 p1" >段落</p>
+</body>
+</html>

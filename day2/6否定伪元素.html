@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+否定伪类：
+作用：可以从已选中的的伪类正剔除某些元素
+语法：
+：not(选择器){
+}
+-->
+<style>
+    p:not(.hello)
+    {
+        background-color: yellow;
+    }
+</style>
+<body>
+<p class="hello">samuro</p>
+<span>samuro</span>
+<p>samuro</p>
+<p>samuro</p>
+<p>samuro</p>
+</body>
+</html>

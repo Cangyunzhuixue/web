@@ -1,0 +1,54 @@
+a:link{
+    color:yellowgreen;
+}
+a:visited{
+    color: red;
+}
+input:focus{
+    background-color: yellow;
+}
+a:hover{
+    color: slateblue;
+}
+a:active{
+    color: black;
+}
+
+
+/*
+visited
+只能设置颜色
+ */
+
+
+
+/*p:hover{
+    color: slateblue;
+}
+p:active{
+    color: yellow;
+}*/
+
+/*
+为p中内动选择内容样式
+ */
+/*p::selection{
+    background-color: orange;
+}*/
+/*p:first-letter{
+    color: yellow;
+    font-size: 20px;
+}
+p:first-line{
+    color: aquamarine;
+}*/
+/*
+p:before {
+    content: "wwohui chiaixnazai ";
+}
+*/
+
+/*
+before表示元素最前边
+结合content一起使用
+ */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础元素选择器</title>
+    <style type="text/css">
+        p[title^="ab"]{
+            background-color: yellow;
+        }
+        p[title="hello"]{
+            background-color: gainsboro;
+
+        }
+        p[title$="n"]{
+            background-color: antiquewhite;
+
+        }
+        p[title*="v"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<!--
+title属性，这个属性可以给任何元素指定，当鼠标移入到元素上时，元素中的title属性值将作为文字提示
+-->
+<body>
+<p title="hello">段落</p>
+<p title="abc">段落2</p>
+<p title="abs">段落说</p>
+<p title="qin">段落4</p>
+<p title="uihvmm">段落</p>
+</body>
+</html>
