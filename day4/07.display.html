@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        a{
+            background-color: #bfa;
+
+            /*
+             * 将一个内联元素变成块元素，
+             * 	通过display样式可以修改元素的类型
+             * 		可选值：
+             * 			inline：可以将一个元素作为内联元素显示
+             * 			block: 可以将一个元素设置块元素显示
+             * 			inline-block：将一个元素转换为行内块元素
+             * 					- 可以使一个元素既有行内元素的特点又有块元素的特点
+             * 						既可以设置宽高，又不会独占一行
+             * 			none: 不显示元素，并且元素不会在页面中继续占有位置
+             */
+            display: block;
+
+            /*为其设置一个宽和高*/
+            width: 500px;
+            height: 500px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            /*
+             * display: none;
+             * 	使用该方式隐藏的元素，不会在页面中显示，并且不再占据页面的位置
+             */
+            /*display: none;*/
+
+            /*
+             * visibility
+             * 	- 可以用来设置元素的隐藏和显示的状态
+             * 	- 可选值：
+             * 		visible 默认值，元素默认会在页面显示
+             * 		hidden 元素会隐藏不显示
+             *
+             * 使用 visibility:hidden;隐藏的元素虽然不会在页面中显示，
+             * 		但是它的位置会依然保持
+             */
+            visibility: hidden;
+        }
+        .s1{
+            /*
+                 内容区、内边距 、边框 、外边距
+             * */
+
+            /*
+             * 内联元素不能设置width和height
+             */
+            /*width: 200px;
+            height: 200px;*/
+
+            /*
+             * 设置水平内边距,内联元素可以设置水平方向的内边距
+             */
+            padding-left: 100px ;
+            padding-right: 100px ;
+
+            /*
+             * 垂直方向内边距，内联元素可以设置垂直方向内边距，但是不会影响页面的布局
+             */
+            /*padding-top: 50px;
+            padding-bottom: 50px;*/
+
+            /*
+             * 为元素设置边框,
+             * 	内联元素可以设置边框，但是垂直的边框不会影响到页面的布局
+             */
+            border: 1px red solid;
+
+            /*
+             * 水平外边距
+             * 	内联元素支持水平方向的外边距
+             */
+            margin-left:100px ;
+            margin-right: 100px;
+
+            /*
+             * 内联元素不支持垂直外边距
+             */
+            /*margin-top: 200px;
+            margin-bottom: 200px;*/
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<a href="#">
+    <span class="s1">我是一个大大的超链接</span></a>
+
+<span>hello</span>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title></title>
+    <style type="text/css">
+
+        /*
+         * 浏览器为了在页面中没有样式时，也可以有一个比较好的显示效果，
+         * 	所以为很多的元素都设置了一些默认的margin和padding，
+         * 	而它的这些默认样式，正常情况下我们是不需要使用的。
+         *
+         * 所以我们往往在编写样式之前需要将浏览器中的默认的margin和padding统统的去掉
+         *
+         */
+
+        /*
+         * 清除浏览器的默认样式
+         */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+        }
+
+        p{
+            background-color: yellow;
+        }
+.box3{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+  /*  border-top: 1px red solid;*/
+    padding-top: 100px;
+
+}
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box3"><div class="box4"></div></div>
+</body>
+</html>
